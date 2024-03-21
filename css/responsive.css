@@ -1,0 +1,357 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	responsive
+-------------------------------------------------------- */
+/* 画面幅が768px以上のとき */
+@media screen and (min-width: 768px) {
+ /* PC用のスタイルを指定する */
+ body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto;
+ }
+}
+
+/* 画面幅が767px以下のとき */
+@media screen and (max-width: 767px) {
+ /* スマートフォン用のスタイルを指定する */
+	body {
+  min-width: 375px;
+ }
+	/* ーーーーーーーーーーーーーーーindexページ */
+	/* main-visual */
+	#main-visual {
+		position: relative;
+		height: 29.4rem;
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: -6.25rem;
+	}
+	#main-visual > div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #2710d5;
+		color: white;
+		border-radius: 0 0 476px 0;
+		text-align: center;
+		height: 280px;
+		width: 100%;
+		z-index: 11;
+	}
+ #main-visual > div > h1{
+		font-size: 2.1rem;
+		margin: 5.6rem 0 0 0;
+	}
+ #main-visual > div > p{
+		font-size: 1.2rem;
+		margin: 0.5rem 0 0 0;
+	}
+ #main-visual > img {
+		width: 100%;
+		border-radius: 476px 0 0 0;
+		z-index: 10;
+		position: absolute;
+		top: 13.75rem;
+		right: 0;
+}
+
+ /* mission */
+ #mission #mission-flex{
+  display: block;
+ }
+ #mission #mission-flex > div{
+  width: 90%;
+  margin: 0 auto;
+ }
+
+ /* product */
+ #product > div{
+  margin-top: 2rem;
+  display: block;
+ }
+ /* left */
+ #product-left {
+  width: 100%;
+  margin: 0 auto;
+ }
+/* right */
+#product-right{
+	width: 100%;
+	margin: 0 auto;
+}
+/* 画像＋説明の枠 */
+#product-left > div{
+	position: relative;
+	height: 30rem;
+	margin: 0 auto;
+}
+#product-right > div{
+	position: relative;
+	height: 30rem;
+	margin: 0 auto;
+}
+ /* 見出し */
+#product-left .product-explain,
+#product-right .product-explain{
+	position: absolute;
+	left: 0;
+	top: 16rem;
+	margin: 0 auto;
+	padding: 1.25rem;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+	background-color: #ffffff;
+}
+/* product-more bottonもっとみる */
+div > a.product-more > img{
+	margin: 0 0 -3rem 0 ;
+}
+
+/* ABOUT US */
+#aboutus{
+	width: 90%;
+}
+#aboutus > div{
+	display: flex;
+	flex-direction: column;
+}
+/* 画像1 */
+.culture-img{
+	order: 1;
+}
+/* table */
+.culture-table{
+ margin: 0 auto;
+	order: 2;
+}
+
+/* VISION */
+#vision{
+	width: 90%;
+}
+#vision > div{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+#vision > div .vision-box{
+ margin: 0 auto;
+ position: relative;
+ margin-bottom: 1.87rem;
+}
+#vision > div .vision-box > img{
+ width: 100%;
+	position: absolute;
+ top: 0;
+ left: 0;
+	right: 0;
+ z-index: 30;
+}
+
+/* COMPANY */
+#company{
+	width: 90%;
+}
+
+/* CONTACT */
+#contact{
+	width: 90%;
+}
+#contact > form > div{
+ display: block;
+ /* flex-direction: row;
+ flex-wrap: wrap; */
+ padding-bottom: 1.87rem;
+}
+/* 左の見出し */
+.contact-heading{
+ width: 100%;
+}
+.contact-textbox{
+	width: 100%;
+ height: 56px;
+}
+.contact-textarea{
+	width: 100%;
+ height: 200px;
+}
+/* 個人情報の取り扱い */
+details {
+ width: 100%;
+}
+
+
+/* ーーーーーーーーーーーーーーーMISSIONページ */
+/* ミッションのメインビジュアル */
+#mission-main{
+	height: 256px;
+	width: 100%;
+ background-image: url("../images/mission/mission-main.webp");
+ background-repeat: no-repeat;
+ background-position-y: center;
+	background-size: auto 208px;
+}
+#mission-title{
+ background-color: #2710d5;
+ width: 136px;
+ height: 256px;
+ border-radius: 0 248px 248px 0;
+ position: relative;
+}
+/* MISSION */
+#mission-title > h1{
+	position: absolute;
+	top: 2rem;
+	left: 1.25rem;
+	font-size: 3rem;
+	font-weight: 900;
+	color: #ffffff;
+}
+/* ミッション */
+#mission-title > span{
+	position: absolute;
+	top: 6rem;
+	left: 1.25rem;
+	font-size: 1.25rem;
+	color: #ffffff;
+}
+
+
+/* パンくずリスト */
+#mission-title > #breadcrumbs{
+	/* position: absolute;
+	top: 10.6rem;
+	left: 1.25rem;
+	font-size: 13px; */
+	color: #ffffff;
+}
+
+
+/* mission-s2dgs */
+#mission-s2dgs{
+	width: 90%;
+}
+#mission-s2dgs .mission-h2{
+ color: #2710d5;
+ font-size: 2.8rem;
+}
+#mission-s2dgs > img{
+ width: 100%;
+}
+#mission-5goals{
+ display: block;
+}
+#mission-5goals > div{
+	width: 90%;
+	margin: 0 auto;
+}
+#mission-5goals > div > #s2dgs-image{
+	width: 100%;
+	padding: 0;
+}
+#mission-5goals > div > div{
+	width: 100%;
+}
+/* 右画像 */
+#mission-5goals > div > div > .fivegoals-image-right{
+ width: 80%;
+	float: none;
+ margin: 2.3rem;
+}
+/* 左画像 */
+#mission-5goals > div > div > .fivegoals-image-left{
+ width: 80%;
+	float: none;
+ margin: 2.3rem;
+}
+
+/* ーーーーーーーーーーーーーーーPRODUCTページ */
+/* プロダクトのメインビジュアル */
+#product-main{
+	height: 256px;
+	width: 100%;
+ background-image: url("../images/product/product-main.webp");
+ background-repeat: no-repeat;
+ background-position-y: center;
+	background-size: auto 208px;
+}
+#product-title{
+ background-color: #2710d5;
+ width: 136px;
+ height: 256px;
+ border-radius: 0 248px 248px 0;
+ position: relative;
+}
+/* PRODUCT */
+#product-title > h1{
+	position: absolute;
+	top: 2rem;
+	left: 1.25rem;
+	font-size: 3rem;
+	font-weight: 900;
+	color: #ffffff;
+}
+/* プロダクト */
+#product-title > span{
+	position: absolute;
+	top: 6rem;
+	left: 1.25rem;
+	font-size: 1.25rem;
+	color: #ffffff;
+}
+ /* パンくずリスト */
+#product-title > div{
+	position: absolute;
+	top: 10.6rem;
+	left: 1.25rem;
+	font-size: 13px;
+	color: #ffffff;
+}
+/* 左画像box */
+.product-section1 {
+	width: 90%;
+	height: 37.5rem;
+	display: flex;
+	flex-direction: column;
+}
+.addition{
+	height: 43.75rem;
+	display: flex;
+	flex-direction: column;
+}
+/* 左画像 */
+.product-section1 > img {
+	order: 1;
+	width: 100%;
+	border-radius: 300px 0 0 0;
+}
+/* 左画像文字box */
+.product-section1 > div {
+	width: 100%;
+	margin-top: 270px;
+	order: 2;
+	position: absolute;
+  top: 0;
+  left: 0;
+}
+/* 右画像box */
+.product-section2 {
+	width: 90%;
+	height: 40rem;
+	display: flex;
+	flex-direction: column;
+}
+/* 右画像 */
+.product-section2 > img {
+	order: 1;
+	width: 100%;
+	border-radius: 300px 0 0 0;
+}
+/* 右画像文字box */
+.product-section2 > div {
+	width: 100%;
+	margin-top: 270px;
+	order: 2;
+}
+
+}

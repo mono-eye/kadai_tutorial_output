@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	header_responsive.css
+-------------------------------------------------------- */
+ /* 画面幅が768px以上のとき */
+@media screen and (min-width: 768px) {
+ /* PC用のスタイルを指定する */
+ body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto;
+ }
+}
+/* PCの指定 */
+/* スマホ用ナビを非表示 */
+#nav-sp,
+#menu-sp {
+	display: none;
+}
+
+/* 画面幅が767px以下のとき */
+@media screen and (max-width: 767px) {
+/* スマートフォン用のスタイルを指定する */
+/* PC用ナビゲーション非表示 */
+	#nav-pc {
+		display: none;
+	}
+	/* #nav-sp,
+	#menu-sp {
+		display: block;
+	} */
+	/* スマホ用メニューボタン */
+	#menu-sp {
+		width: 3rem;
+		height: 3rem;
+		float: right;
+		display: block;
+	}
+	/* スマホ用ナビゲーション */
+	#nav-sp {
+		background-color: #2710d5;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100svh;
+		height: 100vh;
+		width: 100%;
+		display: none;
+		z-index: 100;
+	}
+	/* クローズドbox */
+	#close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 4rem;
+		height: 4rem;
+	}
+	/* logo */
+	#nav-sp > #logo-sp > img{
+		width: 60%;
+		margin: 2rem 0 2rem 1rem;
+	}
+	/* navリスト */
+	#nav-sp > a{
+		font-size: 1rem;
+		display: block;
+		color: #ffffff;
+	}
+	#nav-sp > a:hover,
+	#nav-sp > a:active{
+		color: #ffffff;
+		text-decoration: underline;
+	}
+ #nav-sp > .menu {
+		text-decoration: none;
+		display: block;
+		margin: 0 20px 0 20px;
+		height: 44px;
+		font-size: 1.5rem;
+		background-image: url("../images/arrow.webp");
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+	#sns{
+		position: absolute;
+		bottom: 30px;
+		left: 20px;
+	}
+	#sns > a > img{
+		width: 3rem;
+	}
+	#sns > a {
+		margin-right: 30px;
+	}
+}
