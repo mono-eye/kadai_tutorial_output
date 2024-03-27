@@ -215,14 +215,13 @@ details {
 	font-size: 1.25rem;
 	color: #ffffff;
 }
-
-
 /* パンくずリスト */
-#mission-title > #breadcrumbs{
-	/* position: absolute;
+#mission-title > div{
+	position: absolute;
 	top: 10.6rem;
 	left: 1.25rem;
-	font-size: 13px; */
+	transform: translate( 1.25px, 10.6px);
+	font-size: 13px;
 	color: #ffffff;
 }
 
