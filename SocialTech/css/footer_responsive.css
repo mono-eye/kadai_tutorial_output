@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	footer_responsive
+-------------------------------------------------------- */
+/* 画面幅が768px以上のとき */
+@media screen and (min-width: 768px) {
+ /* PC用のスタイルを指定する */
+ body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto;
+ }
+}
+
+/* 画面幅が767px以下のとき */
+@media screen and (max-width: 767px) {
+ /* スマートフォン用のスタイルを指定する */
+ footer{
+  height: 85svh;
+  height: 85vh;
+  position: relative;
+ }
+ footer #footer-logo{
+  width: 50%;
+  margin: 0 0 0 1rem;
+  padding-top: 1rem;
+ }
+ footer #footer-link ul{
+  display: block;
+ }
+ footer #footer-link ul li a{
+  font-size: 1rem;
+  padding: 0.05rem 0;
+  color: #ffffff;
+  margin: 0 20px 15px 0;
+  display: block;
+  background-image: url("../images/arrow.webp");
+  background-repeat: no-repeat;
+  background-position: right top;
+ }
+ footer #footer-link ul li a:hover,
+ footer #footer-link ul li a:active{
+  opacity: 50%;
+ }
+ footer #footer-link ul li a:visited{
+  opacity: 100%;
+ }
+
+ footer #sns ul{
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+ }
+ footer #sns ul li:last-child{
+  width: 100%;
+  text-align: left;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+ }
+ footer #sns ul li a > img{
+  width: 2rem;
+ }
+
+
+
+
+
+}

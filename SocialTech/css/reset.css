@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	reset
+-------------------------------------------------------- */
+html,body,div,header,footer,
+dl,dt,dd,ul,ol,li,span,
+h1,h2,h3,h4,h5,h6,
+p,a,i,
+table,tbody,th,td,
+pre,form,fieldset,input,textarea,blockquote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	line-height: 1.5;
+	color: #505050;
+	font-style: normal;
+	font-weight: normal;
+	}
+ul,li,a{
+	text-decoration: none;
+	}
+ol,ul {
+	list-style: none;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+#header,#footer,menu,nav,.container{
+	display: block;
+	box-sizing: border-box;
+	}
+img{
+	border: none;
+	vertical-align:bottom;
+	width: 100%;
+ height: auto;
+	}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+	}
+
+
+/* --------- 共通 ---------- */
+	html *{
+	/* border: #666666 1px solid; */
+	}
+	body{
+		width: 100%;
+		max-width: 1080px;
+		/* min-width: 960px; */
+		margin: 0 auto;
+		font-size: 16px;
+		font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+		-webkit-text-size-adjust: 100%;
+		color: #505050;
+	}
+	/* セクション */
+	article, section{
+		width: 100%;
+		margin: 0 auto;
+	}
+	section{
+		margin: 5rem auto
+	}
+	section:first-child{
+		margin: 0 auto
+	}
+
+
+	/* missionの見出し */
+	h2{
+		padding-top: 4rem;
+		font-weight: 900;
+	}
+	h2::after{
+		content: url(../images/line.webp);
+		margin-left: 1.5%
+	}
+	#mission-flex > div > h3{
+		font-size: 2rem;
+		font-weight: 900;
+		padding: 2rem 0;
+	}
+ .product-explain > h3{
+		font-size: 1.1rem;
+		font-weight: 900;
+		padding: 5px 0;
+	}
+
+	h3.index-h3{
+		padding: 1rem 0;
+		font-size: 1.6rem;
+		font-weight: 900;
+	}
+
+
+
+
+
+
+
+
+
+
+

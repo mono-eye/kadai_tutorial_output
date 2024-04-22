@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	header
+-------------------------------------------------------- */
+ header{
+  display: flex;
+  justify-content: space-between;
+ }
+ nav > ul{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 1.5rem;
+ }
+ nav > ul > li{
+  line-height: 3rem;
+ }
+ nav > ul > li > a{
+  line-height: 3rem;
+ }
+ nav > ul > li > a:hover,
+ nav > ul > li > a:active{
+  color: #0d0d0d;
+  text-decoration: underline;
+ }
+ nav > ul > li > a:link {
+  color: #0d0d0d;
+ }
+ nav > ul > li > a :visited {
+  color: #0d0d0d;
+ }
+
+ 
